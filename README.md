@@ -8,6 +8,9 @@ mix archive
 mix archive.uninstall phoenix_new-1.0.3.ez
 # Install archive
 mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.4/phoenix_new-1.0.4.ez
+
+# Get dependecies
+mix deps.get
 ```
 
 ### Phoenix
@@ -27,7 +30,6 @@ mix archive.install https://github.com/phoenixframework/phoenix/releases/downloa
 sudo su - postgres
 psql
 ALTER ROLE postgres WITH PASSWORD 'postgres';
-
 ```
 
 --
