@@ -30,6 +30,16 @@ mix archive.install https://github.com/phoenixframework/phoenix/releases/downloa
 sudo su - postgres
 psql
 ALTER ROLE postgres WITH PASSWORD 'postgres';
+
+# Changeset
+def changeset(model, params \\ nil) do
+  model
+  |> cast(params, @required_fields, @optional_fields)
+  |> validate_unique(:username, on: Phitter.Repo, downcase: true)
+  |> validate_length(:password, min: 1)
+  |> validate_length(:password_confirmation, min: 1)
+  |> validate_confirmation(:password)
+end
 ```
 
 --
