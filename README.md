@@ -24,7 +24,7 @@ sudo apt-get update
 sudo apt-get install esl-erlang
 sudo apt-get install elixir
 mix local.hex
-mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.4/phoenix_new-1.0.4.ez
+mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.1.0/phoenix_new-1.1.0.ez
 
 # Dev Database Setup
 sudo su - postgres
