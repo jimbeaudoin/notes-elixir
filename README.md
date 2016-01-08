@@ -14,7 +14,7 @@ mix deps.get
 ```
 
 ### Phoenix
-**Instalation**
+**Installation**
 ```sh
 # Ubuntu 15.10 (wily)
 sudo apt-get install inotify-tools
