@@ -14,6 +14,7 @@ mix deps.get
 ```
 
 ### Phoenix
+**Instalation**
 ```sh
 # Ubuntu 15.10 (wily)
 sudo apt-get install inotify-tools
@@ -40,6 +41,13 @@ def changeset(model, params \\ nil) do
   |> validate_length(:password_confirmation, min: 1)
   |> validate_confirmation(:password)
 end
+```
+**Update dependencies**
+```sh
+# Update all
+mix deps.update --all
+# Update phoenix
+mix deps.update phoenix
 ```
 
 --
