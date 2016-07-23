@@ -92,7 +92,7 @@ defmodule RoomChannel do
   def handle_info(:after_join, socket) do
     id = socket.assigns.user_id
     push socket, "presence_state", Presence.list(socket)
-    Presence.track(socket, id, %{status: "available})
+    Presence.track(socket, id, %{status: "available"})
     {:noreply, socket}
   end
 end
