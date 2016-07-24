@@ -79,7 +79,7 @@ require IEx;
 IEx.pry
 ```
 
-### Notes
+### Presence
 ```
 defmodule RoomChannel do
   use Phoenix.Channel
@@ -105,6 +105,11 @@ Presence.track("services", "email", %{
 
 Presence.list("services")
 => %{"email" => [...]}
+```
+
+### Notes
+```
+{status, _} = System.cmd("s3cmd", ["-P", "put", filename, s3_name])
 ```
 
 --
