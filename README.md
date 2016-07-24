@@ -109,6 +109,7 @@ Presence.list("services")
 
 ### Notes
 ```
+# This is not recommended, this code is going to spawn a OS process
 {status, _} = System.cmd("s3cmd", ["-P", "put", filename, s3_name])
 ```
 
