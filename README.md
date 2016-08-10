@@ -79,6 +79,12 @@ require IEx;
 IEx.pry
 ```
 
+### Logger
+```
+require Logger
+Logger.info "TEST"
+```
+
 ### Presence
 ```
 defmodule RoomChannel do
