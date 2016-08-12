@@ -117,6 +117,11 @@ Presence.list("services")
 ```
 # This is not recommended, this code is going to spawn a OS process
 {status, _} = System.cmd("s3cmd", ["-P", "put", filename, s3_name])
+
+# Tuples
+data = {:ok, response}
+elem(data, 0) => :ok
+elem(data, 1) => response
 ```
 
 --
