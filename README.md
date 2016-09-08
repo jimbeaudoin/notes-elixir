@@ -122,6 +122,10 @@ Presence.list("services")
 data = {:ok, response}
 elem(data, 0) => :ok
 elem(data, 1) => response
+
+put_resp_header(conn, "location", audio_url(audio_id))
+|> send_resp(304, "")
+
 ```
 
 --
